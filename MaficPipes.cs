@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using HarmonyLib;
+using KMod;
 
 namespace MaficPipes
 {
-    public static class MaficPipesPatches
+    public class MaficPipesPatches: UserMod2
     {
         [HarmonyPatch(typeof(ElementLoader))]
         [HarmonyPatch("FinaliseElementsTable")]
